@@ -6,7 +6,7 @@ function App() {
   const [isLit, setLit] = React.useState(false);
   const [ isTemp, setTemp] = React.useState(72);
   return (
-    <div className={`room ${isLit ? 'lit': 'dark'}`}>This room is {isLit ? 'lit': 'dark'}<br />
+    <div className={`room ${isLit ? 'lit': 'dark'}`}>This room is {isLit ? 'light': 'dark'}<br />
     <button onClick={() => setLit(true)}>On</button>
     <button onClick={() => setLit(false)}>Off</button><br />
     <br /> Temperature is {isTemp}<br />
